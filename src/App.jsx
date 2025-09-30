@@ -61,12 +61,12 @@ export default function App() {
         <main className="flex-1">
           <Routes>
             <Route
-              path="/"
+              path=""
               element={
                 <PostList posts={posts} loading={loading} error={error} />
               }
             />
-            <Route path="/posts/:id" element={<PostDetails />} />
+            <Route path="posts/:id" element={<PostDetails />} />
           </Routes>
         </main>
       </div>
